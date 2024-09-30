@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Topic>
+
+<h2>Темы форума</h2>
+
+<ul>
+    @foreach (var topic in Model)
+    {
+        <li>
+            <a href="@Url.Action("Details", "Topic", new { id = topic.Id })">@topic.Title</a>
+        </li>
+    }
+</ul>
+
