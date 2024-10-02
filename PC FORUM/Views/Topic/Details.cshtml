@@ -1,5 +1,35 @@
-﻿@model Topic
+﻿@model PC_FORUM.Models.Topic
 
-<h1>@Model.Title</h1>
+<h2>@Model.Title</h2>
 <p>@Model.Content</p>
-<p>Создано: @Model.CreatedAt.ToString("g")</p>
+
+<h3>Комментарии</h3>
+
+<h3>Добавить комментарий</h3>
+<form asp-action="AddComment" method="post">
+    <input type="hidden" name="TopicId" value="@Model.Id" />
+    <div class="form-group">
+        <label for="content">Ваш комментарий:</label>
+        <textarea id="content" name="Content" class="form-control" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Добавить комментарий</button>
+</form>
+
+<div id="comments">
+    @foreach (var comment in Model.Comments)
+    {
+        <div class="comment">
+            <p><strong>@comment.UserName</strong>:</p>
+            <p>@comment.Content</p>
+            <p><em>Создано: @comment.CreatedAt.ToString("g")</em></p>
+        </div>
+    }
+</div>
+@*
+@if (!ViewData.ModelState.IsValid)
+{
+    foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+    {
+        <div class="text-danger">@error.ErrorMessage</div>
+    }
+}*@

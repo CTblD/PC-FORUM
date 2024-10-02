@@ -7,41 +7,41 @@ namespace PC_FORUM.Services
 {
     public class UserRepository : IUserRepository
     {
-        private readonly UserManager<User> _userManager;
+        private readonly UserManager<AppUser> _userManager;
         private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public UserRepository(UserManager<User> userManager, IHttpContextAccessor httpContextAccessor)
+        public UserRepository(UserManager<AppUser> userManager, IHttpContextAccessor httpContextAccessor)
         {
             _userManager = userManager;
             _httpContextAccessor = httpContextAccessor;
         }
 
         // Получение текущего авторизованного пользователя
-        public async Task<User> GetCurrentUserAsync()
+        public async Task<AppUser> GetCurrentUserAsync()
         {
             return await _userManager.GetUserAsync(_httpContextAccessor.HttpContext.User);
         }
 
         // Получение всех пользователей
-        public async Task<IEnumerable<User>> GetAllUsersAsync()
+        public async Task<IEnumerable<AppUser>> GetAllUsersAsync()
         {
             return await _userManager.Users.ToListAsync();
         }
 
         // Получение пользователя по ID
-        public async Task<User> GetUserByIdAsync(string userId)
+        public async Task<AppUser> GetUserByIdAsync(string userId)
         {
             return await _userManager.FindByIdAsync(userId);
         }
 
         // Создание пользователя
-        public async Task CreateUserAsync(User user)
+        public async Task CreateUserAsync(AppUser user)
         {
             await _userManager.CreateAsync(user);
         }
 
         // Обновление данных пользователя
-        public async Task UpdateUserAsync(User user)
+        public async Task UpdateUserAsync(AppUser user)
         {
             await _userManager.UpdateAsync(user);
         }

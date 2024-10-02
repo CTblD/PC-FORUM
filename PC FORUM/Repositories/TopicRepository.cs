@@ -13,47 +13,51 @@ namespace PC_FORUM.Services
         {
             _context = context;
         }
-        public bool Add(Topic topic)
+        public bool AddTopic(Topic topic)
         {
             _context.Add(topic);
-            return Save();
+            return SaveTopic();
         }
 
-        public bool Delete(Topic topic)
+        public bool DeleteTopic(Topic topic)
         {
             _context.Remove(topic);
-            return Save();
+            return SaveTopic();
         }
 
-        public async Task<IEnumerable<Topic>> GetAll()
+        public async Task<IEnumerable<Topic>> GetAllTopicAsync()
         {
             return await _context.Topics.ToListAsync();
         }
 
-        public async Task<Topic> GetByIdAsync(int id)
+        public async Task<Topic> GetTopicByIdAsync(int id)
         {
             return await _context.Topics.FirstOrDefaultAsync(i => i.Id == id);
         }
-        public async Task<Topic> GetByIdAsyncNoTracking(int id)
-        {
-            return await _context.Topics.AsNoTracking().FirstOrDefaultAsync(i => i.Id == id);
-        }
+        //public async Task<Topic> GetByIdAsyncNoTracking(int id)
+        //{
+        //    return await _context.Topics.AsNoTracking().FirstOrDefaultAsync(i => i.Id == id);
+        //}
 
         public async Task<IEnumerable<Topic>> GetTopicByTitle(string title)
         {
             return await _context.Topics.Where(c => c.Title.Contains(title)).ToListAsync();
         }
-
-        public bool Save()
+        public async Task CreateTopicAsync(Topic topic)
+        {
+            await _context.Topics.AddAsync(topic);
+            await _context.SaveChangesAsync();
+        }
+        public bool SaveTopic()
         {
             var saved = _context.SaveChanges();
             return saved > 0 ? true : false;
         }
 
-        public bool Update(Topic topic)
+        public bool UpdateTopic(Topic topic)
         {
             _context.Update(topic);
-            return Save();
+            return SaveTopic();
         }
     }
 }

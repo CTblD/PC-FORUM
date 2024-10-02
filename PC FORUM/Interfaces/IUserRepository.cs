@@ -4,11 +4,11 @@ namespace PC_FORUM.Interfaces
 {
     public interface IUserRepository
     {
-        Task<User> GetCurrentUserAsync();
-        Task<IEnumerable<User>> GetAllUsersAsync();
-        Task<User> GetUserByIdAsync(string userId);
-        Task CreateUserAsync(User user);
-        Task UpdateUserAsync(User user);
+        Task<AppUser> GetCurrentUserAsync();
+        Task<IEnumerable<AppUser>> GetAllUsersAsync();
+        Task<AppUser> GetUserByIdAsync(string userId);
+        Task CreateUserAsync(AppUser userId);
+        Task UpdateUserAsync(AppUser userId);
         Task DeleteUserAsync(string userId);
     }
 }

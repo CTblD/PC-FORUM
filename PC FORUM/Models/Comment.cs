@@ -2,16 +2,20 @@
 {
     public class Comment
     {
-        public int Id { get; set; }
-        public string Content { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public int Id { get; set; } // Уникальный идентификатор комментария
 
-        // Связь с пользователем (автором)
-        public string UserId { get; set; }
-        public User Author { get; set; }
+        public int TopicId { get; set; } // Внешний ключ к топику
+        public Topic Topic { get; set; } // Навигационное свойство
+        public string UserId { get; set; } // Идентификатор автора комментария
+        public string UserName { get; set; }
 
-        // Связь с темой
-        public int TopicId { get; set; }
-        public Topic Topic { get; set; }
+        public string Content { get; set; } // Текст комментария
+
+        public DateTime CreatedAt { get; set; } // Дата создания
+
+        ////Реализовать позже
+        //public int? ParentCommentId { get; set; } // Для вложенных комментариев (если есть)
+        //public Comment ParentComment { get; set; } // Навигационное свойство для родительского комментария
+        //public ICollection<Comment> Replies { get; set; } // Ответы на комментарий (если есть)
     }
 }

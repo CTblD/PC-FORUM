@@ -2,8 +2,9 @@
 
 namespace PC_FORUM.Models
 {
-    public class User : IdentityUser
+    public class AppUser : IdentityUser
     {
         // Дополнительные поля для пользователя
+        public ICollection<Comment> Comments { get; set; }
     }
 }

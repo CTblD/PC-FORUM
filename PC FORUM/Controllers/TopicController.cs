@@ -1,31 +1,46 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PC_FORUM.Models; // Убедитесь, что у вас есть это пространство имен
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+using PC_FORUM.Models;
 using PC_FORUM.Interfaces;
 using PC_FORUM.ViewModels;
+using System.Security.Claims;
+
 
 namespace PC_FORUM.Controllers
 {
     public class TopicController : Controller
     {
         private readonly ITopicRepository _topicRepository;
+        private readonly IUserRepository _userRepository;
+        private readonly ICommentRepository _commentRepository;
 
-        public TopicController(ITopicRepository topicRepository)
+
+        public TopicController(ITopicRepository topicRepository, ICommentRepository commentRepository, IUserRepository userRepository)
         {
             _topicRepository = topicRepository;
+            _commentRepository = commentRepository;
+            _userRepository = userRepository;
         }
 
         public async Task<IActionResult> Index()
         {
-            IEnumerable<Topic> topic = await _topicRepository.GetAll();
+            IEnumerable<Topic> topic = await _topicRepository.GetAllTopicAsync();
             return View(topic);
         }
 
         [HttpGet]
         public async Task<IActionResult> Details(int id) 
         {
-            Topic topic = await _topicRepository.GetByIdAsync(id);
+            var topic = await _topicRepository.GetTopicByIdAsync(id);
+            if (topic == null)
+            {
+                return NotFound();
+            }
+
+            // Получите комментарии для данного топика
+            topic.Comments = (await _commentRepository.GetCommentsByTopicIdAsync(id))
+            .OrderByDescending(c => c.CreatedAt) // Сортировка по дате создания
+            .ToList();
+
             return View(topic);
         }
 
@@ -36,25 +51,70 @@ namespace PC_FORUM.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreateTopicVM topicVM)
+        public async Task<IActionResult> Create(string title, string content)
         {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            // Проверка на наличие идентификатора пользователя
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized(); // Возврат 401 Unauthorized, если пользователь не аутентифицирован
+            }
+
+            // Создание новой темы
+            var topic = new Topic
+            {
+                Title = title,
+                UserId = userId,
+                Content = content,
+                CreatedAt = DateTime.Now,
+            };
+
             if (ModelState.IsValid)
             {
-                var topic = new Topic
-                {
-                    Title = topicVM.Title,
-                    Content = topicVM.Content,
-                    CreatedAt = topicVM.CreatedAt,
-                };
-                _topicRepository.Add(topic);
+                _topicRepository.AddTopic(topic); // Ожидание завершения добавления
                 return RedirectToAction("Index");
             }
             else
             {
-                ModelState.AddModelError("", "Фото не загузилось");
+                // Добавление ошибки в модель, если данные не валидны
+                ModelState.AddModelError("", "Некорректные данные. Попробуйте еще раз.");
             }
-            return View(topicVM);
+
+            // Возврат в представление с моделью
+            return View(topic);
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddComment(int topicId, string content)
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var userName = User.Identity.Name;
+
+            if (userId != null && userName != null)
+            {
+                if (string.IsNullOrEmpty(content))
+                {
+                    ModelState.AddModelError("", "Комментарий не может быть пустым.");
+                    return RedirectToAction("Details", new { id = topicId });
+                }
+
+                var comment = new Comment
+                {
+                    TopicId = topicId,
+                    UserId = userId,
+                    UserName = userName,
+                    Content = content,
+                    CreatedAt = DateTime.Now
+                };
+
+                await _commentRepository.AddCommentAsync(comment);
+                return RedirectToAction("Details", new { id = topicId });
+            }
+            return Unauthorized(); // Если пользователь не найден
         }
     }
-    }
+}
 

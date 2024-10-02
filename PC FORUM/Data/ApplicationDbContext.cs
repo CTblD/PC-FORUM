@@ -4,7 +4,7 @@ using PC_FORUM.Models;
 
 namespace PC_FORUM.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<User>
+    public class ApplicationDbContext : IdentityDbContext<AppUser>
     {
         public DbSet<Topic> Topics { get; set; }
         public DbSet<Comment> Comments { get; set; }
@@ -14,15 +14,5 @@ namespace PC_FORUM.Data
         {
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Comment>()
-                .HasOne(c => c.Topic) // Предполагается, что у вас есть навигационное свойство Topic в Comment
-                .WithMany(t => t.Comments) // Предполагается, что у вас есть коллекция Comments в Topic
-                .HasForeignKey(c => c.TopicId) // Замените на ваш фактический идентификатор
-                .OnDelete(DeleteBehavior.Restrict); // Измените поведение на NO ACTION
-
-            base.OnModelCreating(modelBuilder);
-        }
     }
 }

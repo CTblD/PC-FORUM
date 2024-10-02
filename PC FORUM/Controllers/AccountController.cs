@@ -8,10 +8,10 @@ namespace PC_FORUM.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly UserManager<User> _userManager;
-        private readonly SignInManager<User> _signInManager;
+        private readonly UserManager<AppUser> _userManager;
+        private readonly SignInManager<AppUser> _signInManager;
 
-        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager)
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -26,7 +26,7 @@ namespace PC_FORUM.Controllers
         {
             if (ModelState.IsValid)
             {
-                User user = new User { Email = model.Email, UserName = model.UserName, PasswordHash = model.Password};
+                AppUser user = new AppUser { Email = model.Email, UserName = model.UserName, PasswordHash = model.Password};
                 // добавляем пользователя
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)

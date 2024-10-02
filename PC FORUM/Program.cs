@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using PC_FORUM.Data;
 using PC_FORUM.Interfaces;
 using PC_FORUM.Models;
+using PC_FORUM.Repositories;
 using PC_FORUM.Services;
 
 namespace PC_FORUM
@@ -17,6 +18,10 @@ namespace PC_FORUM
             // Добавление MVC
             builder.Services.AddControllersWithViews();
 
+            // Добавление сервиса и интерфейса пользователя
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<ITopicRepository, TopicRepository>();
+            builder.Services.AddScoped<ICommentRepository, CommentRepository>();
             // Настройка подключения к базе данных через контекст ApplicationDbContext
             // Используем SQL Server и получаем строку подключения из конфигурационного файла (appsettings.json)
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -25,17 +30,13 @@ namespace PC_FORUM
             // Настройка службы Identity для управления пользователями и ролями
             // Используем модель пользователя User и роли IdentityRole
             // Храним данные в базе данных через контекст ApplicationDbContext
-            builder.Services.AddIdentity<User, IdentityRole>()
+            builder.Services.AddIdentity<AppUser, IdentityRole>()
             .AddEntityFrameworkStores<ApplicationDbContext>();
 
             builder.Services.AddMemoryCache();
             builder.Services.AddSession();
             // Подключаем куки для аутентификации
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
-            // Добавление сервиса и интерфейса пользователя
-            builder.Services.AddScoped<IUserRepository, UserRepository>();
-            builder.Services.AddScoped<ITopicRepository, TopicRepository>();
-
 
             var app = builder.Build();
 
