@@ -1,13 +1,20 @@
 ﻿@model IEnumerable<Topic>
 
+@if (User.Identity.IsAuthenticated)
+{
+    <a asp-area="" asp-controller="Topic" asp-action="Create" class="btn btn-outline">Создать тему</a>
+}
+
+
 <h2>Темы форума</h2>
 
 <ul>
-    @foreach (var topic in Model)
-    {
-        <li>
-            <a href="@Url.Action("Details", "Topic", new { id = topic.Id })">@topic.Title</a>
-        </li>
-    }
+	@foreach (var topic in Model)
+	{
+		<li>
+			<a href="@Url.Action("Details", "Topic", new { id = topic.Id })">@topic.Title</a>
+		</li>
+	}
 </ul>
+
 

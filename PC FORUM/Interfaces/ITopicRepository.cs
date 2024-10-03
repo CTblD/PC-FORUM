@@ -6,10 +6,11 @@ namespace PC_FORUM.Interfaces
     {
         Task<IEnumerable<Topic>> GetAllTopicAsync();
         Task<Topic> GetTopicByIdAsync(int id);
+        Task<IEnumerable<Topic>> GetTopicByCategoryIdAsync(int categoryId);
         Task<IEnumerable<Topic>> GetTopicByTitle(string title);
-        bool AddTopic(Topic topic);
-        bool UpdateTopic(Topic topic);
-        bool DeleteTopic(Topic topic);
-        bool SaveTopic();
+        bool Add(Topic topic);
+        bool Update(Topic topic);
+        bool Delete(Topic topic);
+        bool Save();
     }
 }

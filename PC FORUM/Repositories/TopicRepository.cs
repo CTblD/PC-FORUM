@@ -13,17 +13,6 @@ namespace PC_FORUM.Services
         {
             _context = context;
         }
-        public bool AddTopic(Topic topic)
-        {
-            _context.Add(topic);
-            return SaveTopic();
-        }
-
-        public bool DeleteTopic(Topic topic)
-        {
-            _context.Remove(topic);
-            return SaveTopic();
-        }
 
         public async Task<IEnumerable<Topic>> GetAllTopicAsync()
         {
@@ -34,11 +23,13 @@ namespace PC_FORUM.Services
         {
             return await _context.Topics.FirstOrDefaultAsync(i => i.Id == id);
         }
-        //public async Task<Topic> GetByIdAsyncNoTracking(int id)
-        //{
-        //    return await _context.Topics.AsNoTracking().FirstOrDefaultAsync(i => i.Id == id);
-        //}
-
+        public async Task<IEnumerable<Topic>> GetTopicByCategoryIdAsync(int categoryId)
+        {
+            return await _context.Topics
+                .Where(t => t.CategoryId == categoryId)
+                .OrderBy(t => t.CreatedAt) // Сортировка по дате создания
+                .ToListAsync();
+        }
         public async Task<IEnumerable<Topic>> GetTopicByTitle(string title)
         {
             return await _context.Topics.Where(c => c.Title.Contains(title)).ToListAsync();
@@ -48,16 +39,27 @@ namespace PC_FORUM.Services
             await _context.Topics.AddAsync(topic);
             await _context.SaveChangesAsync();
         }
-        public bool SaveTopic()
+        public bool Add(Topic topic)
+        {
+            _context.Add(topic);
+            return Save();
+        }
+
+        public bool Delete(Topic topic)
+        {
+            _context.Remove(topic);
+            return Save();
+        }
+        public bool Save()
         {
             var saved = _context.SaveChanges();
             return saved > 0 ? true : false;
         }
 
-        public bool UpdateTopic(Topic topic)
+        public bool Update(Topic topic)
         {
             _context.Update(topic);
-            return SaveTopic();
+            return Save();
         }
     }
 }

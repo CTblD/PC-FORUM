@@ -1,5 +1,4 @@
-﻿﻿@using PC_FORUM.ViewModels
-@model CreateTopicVM
+﻿@model Topic
 
 <h2>Создать тему</h2>
 
@@ -13,6 +12,11 @@
         <label asp-for="Content"></label>
         <textarea asp-for="Content" class="form-control"></textarea>
         <span asp-validation-for="Content" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Category"></label>
+        <textarea asp-for="Category" class="form-control"></textarea>
+        <span asp-validation-for="Category" class="text-danger"></span>
     </div>
     <button type="submit" class="btn btn-primary">Создать</button>
 </form>

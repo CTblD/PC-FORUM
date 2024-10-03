@@ -6,9 +6,9 @@ namespace PC_FORUM.Interfaces
     {
         Task<AppUser> GetCurrentUserAsync();
         Task<IEnumerable<AppUser>> GetAllUsersAsync();
-        Task<AppUser> GetUserByIdAsync(string userId);
-        Task CreateUserAsync(AppUser userId);
-        Task UpdateUserAsync(AppUser userId);
-        Task DeleteUserAsync(string userId);
+        Task<AppUser> GetUserByIdAsync(AppUser user);
+        Task Create(AppUser userId);
+        Task Update(AppUser userId);
+        Task Delete(AppUser userId);
     }
 }

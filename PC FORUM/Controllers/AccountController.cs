@@ -26,6 +26,12 @@ namespace PC_FORUM.Controllers
         {
             if (ModelState.IsValid)
             {
+                var existingUser = await _userManager.FindByEmailAsync(model.Email);
+                if (existingUser != null)
+                {
+                    ModelState.AddModelError("Email", "Email уже занят.");
+                    return View(model);
+                }
                 AppUser user = new AppUser { Email = model.Email, UserName = model.UserName, PasswordHash = model.Password};
                 // добавляем пользователя
                 var result = await _userManager.CreateAsync(user, model.Password);
@@ -33,7 +39,7 @@ namespace PC_FORUM.Controllers
                 {
                     // установка куки
                     await _signInManager.SignInAsync(user, false);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Category");
                 }
                 else
                 {
@@ -69,7 +75,7 @@ namespace PC_FORUM.Controllers
                     var result = await _signInManager.PasswordSignInAsync(user, loginViewModel.Password, false, false);
                     if (result.Succeeded)
                     {
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Index", "Category");
                     }
                 }
                 //Пароль не верный
@@ -85,7 +91,7 @@ namespace PC_FORUM.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Category");
         }
 
     }

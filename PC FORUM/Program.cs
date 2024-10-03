@@ -22,6 +22,7 @@ namespace PC_FORUM
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<ITopicRepository, TopicRepository>();
             builder.Services.AddScoped<ICommentRepository, CommentRepository>();
+            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
             // Настройка подключения к базе данных через контекст ApplicationDbContext
             // Используем SQL Server и получаем строку подключения из конфигурационного файла (appsettings.json)
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -60,7 +61,7 @@ namespace PC_FORUM
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Category}/{action=Index}/{id?}");
 
             app.Run();
         }

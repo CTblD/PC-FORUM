@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PC_FORUM.Models;
 using PC_FORUM.Interfaces;
-using PC_FORUM.ViewModels;
 using System.Security.Claims;
 
 
@@ -21,10 +20,10 @@ namespace PC_FORUM.Controllers
             _userRepository = userRepository;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int id)
         {
-            IEnumerable<Topic> topic = await _topicRepository.GetAllTopicAsync();
-            return View(topic);
+            var topics = await _topicRepository.GetTopicByCategoryIdAsync(id);
+            return View(topics);
         }
 
         [HttpGet]
@@ -54,7 +53,7 @@ namespace PC_FORUM.Controllers
         public async Task<IActionResult> Create(string title, string content)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
+            var userName = User.Identity.Name;
             // Проверка на наличие идентификатора пользователя
             if (string.IsNullOrEmpty(userId))
             {
@@ -66,13 +65,14 @@ namespace PC_FORUM.Controllers
             {
                 Title = title,
                 UserId = userId,
+                UserName = userName,
                 Content = content,
                 CreatedAt = DateTime.Now,
             };
 
             if (ModelState.IsValid)
             {
-                _topicRepository.AddTopic(topic); // Ожидание завершения добавления
+                _topicRepository.Add(topic); // Ожидание завершения добавления
                 return RedirectToAction("Index");
             }
             else

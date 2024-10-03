@@ -29,27 +29,27 @@ namespace PC_FORUM.Services
         }
 
         // Получение пользователя по ID
-        public async Task<AppUser> GetUserByIdAsync(string userId)
+        public async Task<AppUser> GetUserByIdAsync(AppUser user)
         {
-            return await _userManager.FindByIdAsync(userId);
+            return await _userManager.FindByIdAsync(user.Id);
         }
 
         // Создание пользователя
-        public async Task CreateUserAsync(AppUser user)
+        public async Task Create(AppUser user)
         {
             await _userManager.CreateAsync(user);
         }
 
         // Обновление данных пользователя
-        public async Task UpdateUserAsync(AppUser user)
+        public async Task Update(AppUser user)
         {
             await _userManager.UpdateAsync(user);
         }
 
         // Удаление пользователя
-        public async Task DeleteUserAsync(string userId)
+        public async Task Delete(AppUser user)
         {
-            var user = await _userManager.FindByIdAsync(userId);
+            user = await _userManager.FindByIdAsync(user.Id);
             if (user != null)
             {
                 await _userManager.DeleteAsync(user);
