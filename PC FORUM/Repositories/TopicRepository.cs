@@ -3,7 +3,7 @@ using PC_FORUM.Data;
 using PC_FORUM.Interfaces;
 using PC_FORUM.Models;
 
-namespace PC_FORUM.Services
+namespace PC_FORUM.Repositories
 {
     public class TopicRepository : ITopicRepository
     {
@@ -14,7 +14,7 @@ namespace PC_FORUM.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<Topic>> GetAllTopicAsync()
+        public async Task<IEnumerable<Topic>> GetAll()
         {
             return await _context.Topics.ToListAsync();
         }
@@ -23,6 +23,7 @@ namespace PC_FORUM.Services
         {
             return await _context.Topics.FirstOrDefaultAsync(i => i.Id == id);
         }
+
         public async Task<IEnumerable<Topic>> GetTopicByCategoryIdAsync(int categoryId)
         {
             return await _context.Topics
@@ -30,19 +31,16 @@ namespace PC_FORUM.Services
                 .OrderBy(t => t.CreatedAt) // Сортировка по дате создания
                 .ToListAsync();
         }
+
         public async Task<IEnumerable<Topic>> GetTopicByTitle(string title)
         {
             return await _context.Topics.Where(c => c.Title.Contains(title)).ToListAsync();
         }
-        public async Task CreateTopicAsync(Topic topic)
+
+        public async Task AddAsync(Topic topic)
         {
             await _context.Topics.AddAsync(topic);
             await _context.SaveChangesAsync();
-        }
-        public bool Add(Topic topic)
-        {
-            _context.Add(topic);
-            return Save();
         }
 
         public bool Delete(Topic topic)

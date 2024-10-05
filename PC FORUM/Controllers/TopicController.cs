@@ -2,6 +2,9 @@
 using PC_FORUM.Models;
 using PC_FORUM.Interfaces;
 using System.Security.Claims;
+using PC_FORUM.ViewModels;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace PC_FORUM.Controllers
@@ -9,15 +12,17 @@ namespace PC_FORUM.Controllers
     public class TopicController : Controller
     {
         private readonly ITopicRepository _topicRepository;
-        private readonly IUserRepository _userRepository;
         private readonly ICommentRepository _commentRepository;
+        private readonly ICategoryRepository _categoryRepository;
 
 
-        public TopicController(ITopicRepository topicRepository, ICommentRepository commentRepository, IUserRepository userRepository)
+        public TopicController(ITopicRepository topicRepository,
+            ICommentRepository commentRepository,
+            ICategoryRepository categoryRepository)
         {
             _topicRepository = topicRepository;
             _commentRepository = commentRepository;
-            _userRepository = userRepository;
+            _categoryRepository = categoryRepository;
         }
 
         public async Task<IActionResult> Index(int id)
@@ -27,7 +32,7 @@ namespace PC_FORUM.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Details(int id) 
+        public async Task<IActionResult> Details(int id)
         {
             var topic = await _topicRepository.GetTopicByIdAsync(id);
             if (topic == null)
@@ -44,14 +49,52 @@ namespace PC_FORUM.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            return View();
+            // Получите все категории асинхронно
+            var categories = await _categoryRepository.GetAll(); // Предполагается, что метод возвращает Task<IEnumerable<Category>>
+
+            // Преобразуйте результат в SelectListItem
+            var categorySelectList = categories.Select(c => new SelectListItem
+            {
+                Value = c.Id.ToString(),
+                Text = c.Name
+            }).ToList();
+
+            // Теперь присвойте созданный список вашему представлению
+            var model = new CreateTopicVM
+            {
+                Categories = categorySelectList // Используйте вашу новую переменную
+            };
+
+            return View(model);
+
         }
 
+
         [HttpPost]
-        public async Task<IActionResult> Create(string title, string content)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(CreateTopicVM topicVM)
         {
+            //if (!ModelState.IsValid)
+            //{
+                // В случае ошибки валидации повторно загружаем категории
+                topicVM.Categories = (await _categoryRepository.GetAll())
+                    .Select(c => new SelectListItem
+                    {
+                        Value = c.Id.ToString(),
+                        Text = c.Name
+                    }).ToList();
+
+             //   return View(topicVM);
+            
+            var category = _categoryRepository.GetById(topicVM.CategoryId);
+            if (category == null)
+            {
+                ModelState.AddModelError("", "Выбранная категория недействительна.");
+                return View(topicVM);
+            }
+
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var userName = User.Identity.Name;
             // Проверка на наличие идентификатора пользователя
@@ -59,32 +102,34 @@ namespace PC_FORUM.Controllers
             {
                 return Unauthorized(); // Возврат 401 Unauthorized, если пользователь не аутентифицирован
             }
-
             // Создание новой темы
             var topic = new Topic
             {
-                Title = title,
+                Title = topicVM.Title,
                 UserId = userId,
                 UserName = userName,
-                Content = content,
+                Content = topicVM.Content,
                 CreatedAt = DateTime.Now,
+                CategoryId = topicVM.CategoryId,
             };
-
+            if (ModelState.ContainsKey("Categories"))
+            {
+                ModelState.Remove("Categories");
+            }
             if (ModelState.IsValid)
             {
-                _topicRepository.Add(topic); // Ожидание завершения добавления
-                return RedirectToAction("Index");
+                await _topicRepository.AddAsync(topic); // Ожидание завершения добавления
+                return RedirectToAction("Index", "Topic");
             }
-            else
+
+            var errors = ModelState.Values.SelectMany(v => v.Errors);
+            foreach (var error in errors)
             {
-                // Добавление ошибки в модель, если данные не валидны
-                ModelState.AddModelError("", "Некорректные данные. Попробуйте еще раз.");
+                Console.WriteLine(error.ErrorMessage);
             }
 
-            // Возврат в представление с моделью
-            return View(topic);
+            return View(topicVM);
         }
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]

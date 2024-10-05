@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qCYBgCFK+aFQIZ04uI8Qh92yjD82Mi4Fsg3+thRKPkM=",
+  "Hash": "helXOpEjGWckZxgoMnEu2UfJr0RXUTLCz8BdML8Qqcs=",
   "Source": "PC FORUM",
   "BasePath": "_content/PC FORUM",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\css\\styles.css",
+      "SourceId": "PC FORUM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\",
+      "BasePath": "_content/PC FORUM",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
       "Identity": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\favicon.ico",

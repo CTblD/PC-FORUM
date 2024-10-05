@@ -1,11 +1,10 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
+//using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PC_FORUM.Data;
 using PC_FORUM.Interfaces;
 using PC_FORUM.Models;
 using PC_FORUM.Repositories;
-using PC_FORUM.Services;
 
 namespace PC_FORUM
 {
@@ -37,7 +36,7 @@ namespace PC_FORUM
             builder.Services.AddMemoryCache();
             builder.Services.AddSession();
             // Подключаем куки для аутентификации
-            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
+            //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
 
             var app = builder.Build();
 

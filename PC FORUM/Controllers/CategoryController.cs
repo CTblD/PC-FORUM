@@ -12,10 +12,9 @@ namespace PC_FORUM.Controllers
             _categoryRepository = categoryRepository;
         }
 
-        public IActionResult Index()
-
+        public async Task<IActionResult> Index()
         {
-            var categories = _categoryRepository.GetAll();
+            var categories = await _categoryRepository.GetAll();
             return View(categories);
         }
     }

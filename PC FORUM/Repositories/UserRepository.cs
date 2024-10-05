@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using PC_FORUM.Interfaces;
 using PC_FORUM.Models;
 
-namespace PC_FORUM.Services
+namespace PC_FORUM.Repositories
 {
     public class UserRepository : IUserRepository
     {

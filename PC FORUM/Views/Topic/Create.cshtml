@@ -1,30 +1,38 @@
-﻿@model Topic
+﻿@model PC_FORUM.ViewModels.CreateTopicVM
 
-<h2>Создать тему</h2>
+<h2>Create Topic</h2>
 
 <form asp-action="Create" method="post">
     <div class="form-group">
-        <label asp-for="Title"></label>
+        <label asp-for="Title" class="control-label"></label>
         <input asp-for="Title" class="form-control" />
         <span asp-validation-for="Title" class="text-danger"></span>
     </div>
+
     <div class="form-group">
-        <label asp-for="Content"></label>
+        <label asp-for="Content" class="control-label"></label>
         <textarea asp-for="Content" class="form-control"></textarea>
         <span asp-validation-for="Content" class="text-danger"></span>
     </div>
+
     <div class="form-group">
-        <label asp-for="Category"></label>
-        <textarea asp-for="Category" class="form-control"></textarea>
-        <span asp-validation-for="Category" class="text-danger"></span>
+        <label asp-for="CategoryId"></label>
+        <select asp-for="CategoryId" class="form-control" asp-items="Model.Categories"></select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
     </div>
-    <button type="submit" class="btn btn-primary">Создать</button>
+
+    <button type="submit" class="btn btn-primary">Create Topic</button>
 </form>
+
 
 @if (!ViewData.ModelState.IsValid)
 {
-    foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
-    {
-        <div class="text-danger">@error.ErrorMessage</div>
-    }
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
 }

@@ -380,18 +380,21 @@ namespace PC_FORUM.Migrations
 
             modelBuilder.Entity("PC_FORUM.Models.Topic", b =>
                 {
-                    b.HasOne("PC_FORUM.Models.Category", "Category")
-                        .WithMany()
+                    b.HasOne("PC_FORUM.Models.Category", null)
+                        .WithMany("Topics")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("PC_FORUM.Models.AppUser", b =>
                 {
                     b.Navigation("Comments");
+                });
+
+            modelBuilder.Entity("PC_FORUM.Models.Category", b =>
+                {
+                    b.Navigation("Topics");
                 });
 
             modelBuilder.Entity("PC_FORUM.Models.Topic", b =>

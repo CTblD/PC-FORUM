@@ -5,6 +5,7 @@ namespace PC_FORUM.Interfaces
 {
 	public interface ICategoryRepository
 	{
-		IEnumerable<Category> GetAll();
+		Task<IEnumerable<Category>> GetAll();
+		Task<Category> GetById(int id);
 	}
 }
