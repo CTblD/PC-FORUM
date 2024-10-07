@@ -21,10 +21,3 @@
         <input type="submit" value="Войти" />
     </div>
 </form>
-@if (!ViewData.ModelState.IsValid)
-{
-    foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
-    {
-        <div>@error.ErrorMessage</div>
-    }
-}

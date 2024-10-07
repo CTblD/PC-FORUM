@@ -5,8 +5,8 @@
       "PackagePath": "staticwebassets\\PC FORUM.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\css\\NewStyleSheet.css",
+      "PackagePath": "staticwebassets\\css\\NewStyleSheet.css"
     },
     {
       "Id": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\css\\styles.css",
@@ -17,8 +17,8 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
     },
     {
       "Id": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\lib\\bootstrap\\LICENSE",

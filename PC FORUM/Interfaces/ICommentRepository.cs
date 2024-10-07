@@ -6,8 +6,8 @@ namespace PC_FORUM.Interfaces
     {
         Task<IEnumerable<Comment>> GetCommentsByTopicIdAsync(int topicId);
         Task<Comment> GetCommentByIdAsync(int commentId);
-        Task AddCommentAsync(Comment comment);
-        Task UpdateCommentAsync(Comment comment);
-        Task DeleteCommentAsync(int commentId);
+        Task Add(Comment comment);
+        Task Update(Comment comment);
+        Task Delete(int commentId);
     }
 }

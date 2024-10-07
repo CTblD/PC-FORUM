@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xrcXNVGJYJwNasM403x7FmwIPmdp98NCjV9WrRzIMDI=",
+  "Hash": "HQYGJLpqZ9c4sqD8eLNqfnu7aDuz0Gor4vvQqTosy6A=",
   "Source": "PC FORUM",
   "BasePath": "_content/PC FORUM",
   "Mode": "Default",
@@ -55,12 +55,12 @@
       "OriginalItemSpec": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PC FORUM.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\css\\NewStyleSheet.css",
       "SourceId": "PC FORUM",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\",
       "BasePath": "_content/PC FORUM",
-      "RelativePath": "css/site.css",
+      "RelativePath": "css/NewStyleSheet.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,7 +71,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
+      "OriginalItemSpec": "wwwroot\\css\\NewStyleSheet.css"
     },
     {
       "Identity": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\css\\styles.css",
@@ -112,12 +112,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\js\\scripts.js",
       "SourceId": "PC FORUM",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\",
       "BasePath": "_content/PC FORUM",
-      "RelativePath": "js/site.js",
+      "RelativePath": "js/scripts.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
+      "OriginalItemSpec": "wwwroot\\js\\scripts.js"
     },
     {
       "Identity": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

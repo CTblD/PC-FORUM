@@ -5,7 +5,6 @@
 <h5>Автор: @Model.UserName</h5>
 
 <h3>Комментарии</h3>
-
 <h3>Добавить комментарий</h3>
 <form asp-action="AddComment" method="post">
     <input type="hidden" name="TopicId" value="@Model.Id" />
@@ -16,21 +15,37 @@
     <button type="submit" class="btn btn-primary">Добавить комментарий</button>
 </form>
 
-<div id="comments">
-    @foreach (var comment in Model.Comments)
+<ul>
+    @foreach (var comment in Model.Comments.Where(c => c.ParentCommentId == null))
     {
-        <div class="comment">
-            <p><strong>@comment.UserName</strong>:</p>
-            <p>@comment.Content</p>
+        <li>
+            <div><strong>@comment.UserName</strong>: @comment.Content</div>
             <p><em>Создано: @comment.CreatedAt.ToString("g")</em></p>
-        </div>
+
+            @* Форма для ответа на комментарий *@
+            <form asp-action="AddComment" method="post">
+                <input type="hidden" name="TopicId" value="@Model.Id" />
+                <input type="hidden" name="ParentCommentId" value="@comment.Id" />
+                <div class="form-group">
+                    <label for="replyContent">Ваш ответ:</label>
+                    <textarea id="replyContent" name="Content" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Ответить</button>
+            </form>
+
+            @* Рекурсивно отображаем ответы *@
+            @if (comment.Replies.Any())
+            {
+                <ul>
+                    @foreach (var reply in comment.Replies)
+                    {
+                        <li>
+                            <div><strong>@reply.UserName</strong>: @reply.Content</div>
+                            <p><em>Создано: @reply.CreatedAt.ToString("g")</em></p>
+                        </li>
+                    }
+                </ul>
+            }
+        </li>
     }
-</div>
-@*
-@if (!ViewData.ModelState.IsValid)
-{
-    foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
-    {
-        <div class="text-danger">@error.ErrorMessage</div>
-    }
-}*@
+</ul>

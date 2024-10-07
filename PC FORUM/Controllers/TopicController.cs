@@ -32,16 +32,16 @@ namespace PC_FORUM.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(int Id)
         {
-            var topic = await _topicRepository.GetTopicByIdAsync(id);
+            var topic = await _topicRepository.GetTopicByIdAsync(Id);
             if (topic == null)
             {
                 return NotFound();
             }
 
             // Получите комментарии для данного топика
-            topic.Comments = (await _commentRepository.GetCommentsByTopicIdAsync(id))
+            topic.Comments = (await _commentRepository.GetCommentsByTopicIdAsync(Id))
             .OrderByDescending(c => c.CreatedAt) // Сортировка по дате создания
             .ToList();
 
@@ -119,7 +119,7 @@ namespace PC_FORUM.Controllers
             if (ModelState.IsValid)
             {
                 await _topicRepository.AddAsync(topic); // Ожидание завершения добавления
-                return RedirectToAction("Index", "Topic");
+                return RedirectToAction("Index", "Category");
             }
 
             var errors = ModelState.Values.SelectMany(v => v.Errors);
@@ -133,12 +133,12 @@ namespace PC_FORUM.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddComment(int topicId, string content)
+        public async Task<IActionResult> AddComment(int topicId, string content, int? parentCommentId = null)
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var userName = User.Identity.Name;
 
-            if (userId != null && userName != null)
+            if (userId != null)
             {
                 if (string.IsNullOrEmpty(content))
                 {
@@ -152,10 +152,11 @@ namespace PC_FORUM.Controllers
                     UserId = userId,
                     UserName = userName,
                     Content = content,
-                    CreatedAt = DateTime.Now
+                    CreatedAt = DateTime.Now,
+                    ParentCommentId = parentCommentId,
                 };
 
-                await _commentRepository.AddCommentAsync(comment);
+                await _commentRepository.Add(comment);
                 return RedirectToAction("Details", new { id = topicId });
             }
             return Unauthorized(); // Если пользователь не найден

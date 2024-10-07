@@ -3,52 +3,63 @@
   "WorkspaceRootPath": "C:\\Users\\halad\\source\\repos\\PC FORUM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\repositories\\topicrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\repositories\\topicrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\viewmodels\\createtopicvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\viewmodels\\createtopicvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\views\\topic\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\views\\topic\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\views\\topic\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\views\\topic\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\interfaces\\itopicrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\interfaces\\itopicrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\models\\topic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\models\\topic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\halad\\Desktop\\startbootstrap-clean-blog-gh-pages\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\pc forum.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\pc forum.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|c:\\users\\halad\\source\\repos\\pc forum\\pc forum\\migrations\\20241006214603_removeappuserfromcomments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F3B7D3D-5492-49C2-9E84-746662DD5E8A}|PC FORUM\\PC FORUM.csproj|solutionrelative:pc forum\\migrations\\20241006214603_removeappuserfromcomments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,11 +69,37 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "PC FORUM\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "PC FORUM\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-07T18:13:55.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "bootstrap.js",
+              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+              "RelativeDocumentMoniker": "PC FORUM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+              "RelativeToolTip": "PC FORUM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-07T18:11:02.389Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -72,152 +109,160 @@
               "RelativeDocumentMoniker": "PC FORUM\\Views\\Category\\Index.cshtml",
               "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Category\\Index.cshtml",
               "RelativeToolTip": "PC FORUM\\Views\\Category\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-05T00:54:26.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TopicController.cs",
-              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Controllers\\TopicController.cs",
-              "RelativeDocumentMoniker": "PC FORUM\\Controllers\\TopicController.cs",
-              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Controllers\\TopicController.cs",
-              "RelativeToolTip": "PC FORUM\\Controllers\\TopicController.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAjwHgAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T22:53:18.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "PC FORUM\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "PC FORUM\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T22:55:31.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TopicRepository.cs",
-              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Repositories\\TopicRepository.cs",
-              "RelativeDocumentMoniker": "PC FORUM\\Repositories\\TopicRepository.cs",
-              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Repositories\\TopicRepository.cs",
-              "RelativeToolTip": "PC FORUM\\Repositories\\TopicRepository.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAD4vykAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T22:53:01.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ITopicRepository.cs",
-              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Interfaces\\ITopicRepository.cs",
-              "RelativeDocumentMoniker": "PC FORUM\\Interfaces\\ITopicRepository.cs",
-              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Interfaces\\ITopicRepository.cs",
-              "RelativeToolTip": "PC FORUM\\Interfaces\\ITopicRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T22:52:40.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "PC FORUM\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "PC FORUM\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T22:52:21.78Z",
+              "WhenOpened": "2024-10-07T17:55:07.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Repositories\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "PC FORUM\\Repositories\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Repositories\\CategoryRepository.cs",
-              "RelativeToolTip": "PC FORUM\\Repositories\\CategoryRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwA8AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T22:50:35.341Z",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "PC FORUM\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "PC FORUM\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T22:46:19.09Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Interfaces\\ICategoryRepository.cs",
-              "RelativeDocumentMoniker": "PC FORUM\\Interfaces\\ICategoryRepository.cs",
-              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Interfaces\\ICategoryRepository.cs",
-              "RelativeToolTip": "PC FORUM\\Interfaces\\ICategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T00:16:20.545Z",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "PC FORUM\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "PC FORUM\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T22:46:12.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "PC FORUM\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "PC FORUM\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T22:37:16.451Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CreateTopicVM.cs",
-              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\ViewModels\\CreateTopicVM.cs",
-              "RelativeDocumentMoniker": "PC FORUM\\ViewModels\\CreateTopicVM.cs",
-              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\ViewModels\\CreateTopicVM.cs",
-              "RelativeToolTip": "PC FORUM\\ViewModels\\CreateTopicVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T23:29:17.711Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PC FORUM\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PC FORUM\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABIAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T22:37:14.468Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Topic.cs",
-              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Models\\Topic.cs",
-              "RelativeDocumentMoniker": "PC FORUM\\Models\\Topic.cs",
-              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Models\\Topic.cs",
-              "RelativeToolTip": "PC FORUM\\Models\\Topic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\halad\\Desktop\\startbootstrap-clean-blog-gh-pages\\index.html",
+              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\startbootstrap-clean-blog-gh-pages\\index.html",
+              "ToolTip": "C:\\Users\\halad\\Desktop\\startbootstrap-clean-blog-gh-pages\\index.html",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\startbootstrap-clean-blog-gh-pages\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-06T22:33:05.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20241006214603_RemoveAppUserFromComments.cs",
+              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Migrations\\20241006214603_RemoveAppUserFromComments.cs",
+              "RelativeDocumentMoniker": "PC FORUM\\Migrations\\20241006214603_RemoveAppUserFromComments.cs",
+              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Migrations\\20241006214603_RemoveAppUserFromComments.cs",
+              "RelativeToolTip": "PC FORUM\\Migrations\\20241006214603_RemoveAppUserFromComments.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T23:23:06.012Z",
+              "WhenOpened": "2024-10-06T21:46:03.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Topic\\Details.cshtml",
+              "RelativeDocumentMoniker": "PC FORUM\\Views\\Topic\\Details.cshtml",
+              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Topic\\Details.cshtml",
+              "RelativeToolTip": "PC FORUM\\Views\\Topic\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T21:20:18.984Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Topic\\Create.cshtml",
+              "RelativeDocumentMoniker": "PC FORUM\\Views\\Topic\\Create.cshtml",
+              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Views\\Topic\\Create.cshtml",
+              "RelativeToolTip": "PC FORUM\\Views\\Topic\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T05:38:52.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Repositories\\CommentRepository.cs",
+              "RelativeDocumentMoniker": "PC FORUM\\Repositories\\CommentRepository.cs",
+              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Repositories\\CommentRepository.cs",
+              "RelativeToolTip": "PC FORUM\\Repositories\\CommentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T05:06:19.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ICommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Interfaces\\ICommentRepository.cs",
+              "RelativeDocumentMoniker": "PC FORUM\\Interfaces\\ICommentRepository.cs",
+              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Interfaces\\ICommentRepository.cs",
+              "RelativeToolTip": "PC FORUM\\Interfaces\\ICommentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T05:06:05.025Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Program.cs",
-              "RelativeDocumentMoniker": "PC FORUM\\Program.cs",
-              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Program.cs",
-              "RelativeToolTip": "PC FORUM\\Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCIAAAAAAAAAAAAAAA==",
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "PC FORUM\\Models\\Comment.cs",
+              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Models\\Comment.cs",
+              "RelativeToolTip": "PC FORUM\\Models\\Comment.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T22:23:11.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T04:53:13.19Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "PC FORUM.csproj",
-              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\PC FORUM.csproj",
-              "RelativeDocumentMoniker": "PC FORUM\\PC FORUM.csproj",
-              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\PC FORUM.csproj",
-              "RelativeToolTip": "PC FORUM\\PC FORUM.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-04T22:12:54.556Z"
+              "Title": "TopicController.cs",
+              "DocumentMoniker": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Controllers\\TopicController.cs",
+              "RelativeDocumentMoniker": "PC FORUM\\Controllers\\TopicController.cs",
+              "ToolTip": "C:\\Users\\halad\\source\\repos\\PC FORUM\\PC FORUM\\Controllers\\TopicController.cs",
+              "RelativeToolTip": "PC FORUM\\Controllers\\TopicController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAiwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T22:53:18.661Z"
             }
           ]
         }

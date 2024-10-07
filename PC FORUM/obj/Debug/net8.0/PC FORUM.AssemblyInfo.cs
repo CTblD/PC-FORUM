@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PC FORUM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42d36e3e41c99e050fc5bdeaf37c6654379ce615")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4e9c5e921d1f440f7047ef98134e1d560b4d804")]
 [assembly: System.Reflection.AssemblyProductAttribute("PC FORUM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PC FORUM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
